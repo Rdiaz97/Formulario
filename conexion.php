@@ -8,10 +8,10 @@ if (isset ($conexion)) {
 }
 
 
-$email = $_GET["email"]?? NULL;
-$sql="INSERT INTO contactos(correo)VALUES ('$email')";
-mysqli_query($conexion, $sql);
-if($email=1){
-    header("location:index.html");
-}
+// $email = $_GET["email"]?? NULL;
+// $sql="INSERT INTO contactos(correo)VALUES ('$email')";
+// mysqli_query($conexion, $sql);
+// if($email=1){
+//     header("location:index.html");
+// }
 ?>
