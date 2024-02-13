@@ -7,15 +7,73 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Contacto</h1>
+    <h1>Contactame!</h1>
     <form>
 
-        <label for="email">Ingresa tu correo</label>
-        <br>
-        <input type="email" id="email" name="email">
-        <br>
-        <input type="submit">
-
+        <div class="item1">
+            <label for="nombre">Nombre: <br>
+                <input type="text" placeholder="Acá tu nombre" required id="nombre">
+            </label>
+            
+        </div>
+        
+        <div class="item2">
+            <label for="apellido">Apellido: <br>
+                <input type="text" placeholder="Acá tu apellido" required id="apellido">
+            </label>
+            
+        </div>
+        
+        <div class="item3">
+            <label>Sexo:
+            <br>
+                <label id="label-ground" for="masculino">Masculino
+                    <input type="radio" id="masculino" name="m-f" checked value="masculino"></label>
+            <br>
+                <label id="label-ground" for="femenino">Femenino
+                    <input type="radio" id="femenino" name="m-f" value="Femenino"></label>
+            </label>
+            
+        </div>
+        
+        <div class="item4">
+            <label for="date">Ingresa tu fecha de nacimiento: <br>
+                <input type="date" required id="date">
+            </label>
+            
+        </div>
+        
+        <div class="item5">
+            <label for="pais">País: <br>
+                <input type="text" placeholder="Acá tu país" required id="pais">
+            </label>
+            
+        </div>
+        
+        <div class="item6">
+            <label for="numero">Ingresa tu número celular: <br>
+                <input type="tel" pattern="[0-9]{3}-[0-9]]{7}" maxlength="10" placeholder="Acá tu celular" required id="numero">
+            </label>
+            
+        </div>
+        
+        <div class="item7">
+            <label for="email">Ingresa tu correo: <br>
+                <input type="email" placeholder="Acá tu correo" required id="email">
+            </label>
+            
+        </div>
+        
+        <div class="item8">
+            <label for="mensaje">Enviame un mensaje: <br>
+                <textarea rows="4" id="mensaje"></textarea>
+            </label>
+            
+        </div>
+        
+        <div class="item9">
+            <input type="submit">
+        </div>
     </form>
 </body>
 </html>
