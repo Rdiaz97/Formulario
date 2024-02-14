@@ -18,7 +18,7 @@ input {
 
 input[type="submit"]{
     font-size: 20px;
-    background-color:white;
+    background-color:rgb(58, 38, 38);
     border-radius: 15px;
     width:500px;
 }
@@ -30,6 +30,19 @@ input[type="submit"]{
 
 textarea{
     width: 250px;
+}
+
+input:invalid {
+    background-color: #ffdddd;
+}
+
+input:valid {
+    background-color: #ddffdd;
+}
+
+
+form:invalid {
+    border: 5px solid #ff5454;
 }
 
 form{
@@ -45,6 +58,10 @@ form{
     display: grid;
     grid-template-columns: 250px 250px;
     grid-template-rows: 100px 100px 100px 100px 100px;
+}
+
+form:valid {
+    border: 5px solid #6ffc6f;
 }
 
 .item1{
