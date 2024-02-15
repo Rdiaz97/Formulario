@@ -33,10 +33,11 @@ textarea{
 }
 
 input:invalid {
-    background-color: #ffdddd;
+    background-color: #db7979;
 }
 
 input:valid {
+    transition: background 1s linear;
     background-color: #ddffdd;
 }
 
@@ -44,7 +45,6 @@ input:valid {
 form:invalid {
     border: 5px solid #ff5454;
 }
-
 
 form{
     margin: auto;
@@ -59,9 +59,65 @@ form{
     display: grid;
     grid-template-columns: 250px 250px;
     grid-template-rows: 100px 100px 100px 100px 100px;
+
+}
+
+.animation{
+    position:absolute;
+    top: 13.3%;
+    left: 50%;
+    height: 5px;
+    width: 30px;
+    background-color: #6ffc6f;
+    animation-name: vueltas;
+    animation-duration: 8s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes vueltas {
+    
+    
+    12.5%{left: 9.8%;}
+    25%{height: 30px;
+        width: 5px;}
+    37.5%{top:80px;
+        height: 30px;
+        width: 5px;}
+    50%{
+        top:90px;
+        }
+    51%{
+        top:100px;
+        }
+    53%{
+        top:150px;
+        }
+    54%{
+        top:200px;
+        }
+    55%{
+        top:300px;
+        }
+    56%{
+        top:400px;
+        }
+    60%{
+        top:500px;
+        }
+    70%{top:580px;
+        left: 9.8%;
+        height: 5px;
+        width: 30px;}
+    100%{top:580px;
+        left: 9.8%;
+        height: 5px;
+        width: 30px;}
+
 }
 
 form:valid {
+    transition: border 1s linear;
     border: 5px solid #6ffc6f;
 }
 
@@ -110,4 +166,3 @@ form:valid {
     grid-column: 1/3;
     grid-area: 5/1/6/6;
 }
-
