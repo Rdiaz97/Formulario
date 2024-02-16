@@ -1,0 +1,1 @@
+const barra = document.querySelector(".animation")
